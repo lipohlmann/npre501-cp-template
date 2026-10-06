@@ -1,14 +1,11 @@
-# General Report Template
-This LaTeX report template is intended for general use, though it has been slightly tailored to academic writing.
-
-## How To Use
-Simply copy the contents of this repository into your working directory or use the magic green "Use this Template" button on GitHub, then start writing! To compile locally, use:
+# Report
+A report has been created in LaTeX. To build, run:
 ```
-latexmk -pdf report.tex
+latexmk -pdf lastname-report.tex
 ```
 To clean up the generated files, run:
 ```
-latexmk -c report.tex
+latexmk -c lastname-report.tex
 ```
 
 ## Requirements
@@ -23,8 +20,3 @@ As a LaTeX user myself, I have included packages that I commonly find myself usi
 
 These packages are not mandatory to compile, so feel free to edit or remove as you see fit.
 
-## Acknowledgements
-The class file for the template was made through the inspiration in:
-1. Argonne National Laboratory's `anlreport.cls` file. The source file is not public, but the lab has an [Overleaf account](https://www.overleaf.com/org/anl#overview). No copyright infringement intended, and no proprietary or controlled material was taken.
-2. [ARFC report template](https://github.com/arfc/report-template)
-   
