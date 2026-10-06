@@ -14,7 +14,7 @@ latexmk -c lastname-report.tex
 ## Requirements
 Up-to-date [TeX Live](https://www.tug.org/texlive/) to run `pdflatex` and `biber`. Note the use of `biber`, indicating the references are handled using [BibLaTeX](https://ctan.org/pkg/biblatex?lang=en).
 
-**DELETE THE FOLLOWING SECTION BEFORE SUBMISSION. THIS INFO IS JUST FOR THE DEVELOPER WHEN THEY FIRST COPY THE TEMPLATE.
+**DELETE THE FOLLOWING SECTION BEFORE SUBMISSION. THIS INFO IS JUST FOR THE DEVELOPER WHEN THEY FIRST COPY THE TEMPLATE.**
 ## Additional Notes
 As a LaTeX user myself, I have included packages that I commonly find myself using. These include:
 1. [Physics2](https://mirrors.mit.edu/CTAN/macros/latex/contrib/physics2/physics2.pdf) Great package for typesetting math.
