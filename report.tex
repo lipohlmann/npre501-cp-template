@@ -1,0 +1,69 @@
+\documentclass{general_report}
+
+\usepackage{lipsum}
+\usepackage{fontawesome5} % for GitHub logo
+
+%==============================================================================%
+% CONVENIENCE COMMANDS
+%==============================================================================%
+\newcommand{\ohat}{\hat{\Omega}}
+%==============================================================================%
+
+\usepackage{etoolbox}
+\usepackage[backend=biber,style=numeric,sorting=nyt,
+	natbib=true,firstinits=true,uniquename=false,defernumbers=true]{biblatex}
+
+\addbibresource{references.bib}
+
+\onehalfspacing
+
+\title{Report Title}
+\subtitle{Report Subtitle}
+
+\authoronelist{Liam Pohlmann}
+\authoronetitle{Graduate Research Assistant}
+\authoronedepart{Department of Nuclear, Plasma, and Radiological Engineering}
+\authoroneaffil{University of Illinois at Urbana-Champaign}
+
+\authortwolist{Liam Pohlmann 2}
+\authortwotitle{Graduate Research Assistant}
+\authortwodepart{Department of Nuclear, Plasma, and Radiological Engineering}
+\authortwoaffil{University of Illinois at Urbana-Champaign}
+
+\authorthreelist{Liam Pohlmann 3}
+\authorthreetitle{Graduate Research Assistant}
+\authorthreedepart{Department of Nuclear, Plasma, and Radiological Engineering}
+\authorthreeaffil{University of Illinois at Urbana-Champaign}
+
+\date{\today}
+
+\begin{document}
+\frontmatter
+
+\begin{foreword}
+  Foreword.
+\end{foreword}
+
+\tableofcontents
+% \listoffigures
+% \listoftables
+\clearpage
+
+% Start page numbering in arabic numerals
+\pagestyle{fancy} % start main style
+\fancyhf{}
+\fancyfoot[C]{\thepage} % page numbers in footer
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+\section{Example Section}
+\input{src/example.tex}
+
+\clearpage
+\appendix
+\section{Appendix}
+
+\clearpage
+\printbibliography
+
+\end{document}
